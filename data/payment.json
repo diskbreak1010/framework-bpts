@@ -1,0 +1,10 @@
+{
+  "Billing Issue": {
+    "Double Payment": {
+      "instruction": "Check transaction log and initiate refund if applicable.",
+      "emailTemplate": "Hi, we noticed two payments for the same period...",
+      "kbLink": "https://kb.example.com/double-payment",
+      "relatedCases": []
+    }
+  }
+}
