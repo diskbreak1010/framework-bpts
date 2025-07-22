@@ -1,10 +1,22 @@
 {
-  "title": "Owner Not Verified",
-  "instruction": "Make sure the owner has submitted valid verification documents via the official portal.",
-  "emailTemplate": "Dear Owner,\n\nYour listing is currently not verified. Please follow the steps on the knowledge base to complete verification.\n\nThank you,\nSupport Team",
-  "knowledgeBase": {
-    "title": "How to Verify Your Listing",
-    "url": "https://support.tripadvisor.com/articles/how-to-verify"
-  },
-  "relatedCases": ["case-1021", "case-1099", "case-1145"]
+  "tripadvisor": {
+    "owner": {
+      "listing": {
+        "verification": {
+          "how-to-verify": {
+            "not-verified": {
+              "title": "Owner Not Verified",
+              "instruction": "Make sure the owner has submitted valid verification documents via the official portal.",
+              "emailTemplate": "Dear Owner,\n\nYour listing is currently not verified. Please follow the steps on the knowledge base to complete verification.\n\nThank you,\nSupport Team",
+              "knowledgeBase": {
+                "title": "How to Verify Your Listing",
+                "url": "https://support.tripadvisor.com/articles/how-to-verify"
+              },
+              "relatedCases": ["case-1021", "case-1099", "case-1145"]
+            }
+          }
+        }
+      }
+    }
+  }
 }
