@@ -1,0 +1,24 @@
+{
+  "Verify Listing": {
+    "Verify Owner": {
+      "instruction": "Ask for ID and property document.",
+      "emailTemplate": "Hi, kindly provide your valid ID and listing documents...",
+      "kbLink": "https://kb.example.com/verify-owner",
+      "relatedCases": ["LIST123", "LIST456"]
+    },
+    "Verify Address": {
+      "instruction": "Cross-check with Google Maps and client input.",
+      "emailTemplate": "Hi, please confirm the address you used for registration...",
+      "kbLink": "https://kb.example.com/verify-address",
+      "relatedCases": []
+    }
+  },
+  "Recover Listing": {
+    "Forgot Email": {
+      "instruction": "Ask for registered phone number and address.",
+      "emailTemplate": "Hi, kindly provide your registered number and full address...",
+      "kbLink": "https://kb.example.com/recover-email",
+      "relatedCases": ["LIST789"]
+    }
+  }
+}
