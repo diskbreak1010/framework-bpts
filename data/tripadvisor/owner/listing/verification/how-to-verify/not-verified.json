@@ -1,57 +1,10 @@
 {
-  "question": "What kind of verification issue?",
-  "options": [
-    {
-      "label": "Email not received",
-      "next": {
-        "question": "Have you checked your spam folder?",
-        "options": [
-          {
-            "label": "Yes",
-            "resolution": {
-              "correctProcess": "Advise the customer to click 'Resend Verification Email' in their account settings.",
-              "wrongProcess": "Telling the customer to create a new account without troubleshooting.",
-              "resolutionScript": "To resend your verification email, go to Settings > Account > Resend Verification.",
-              "additionalNotes": "If they still don’t receive it, escalate to Tier 2 support."
-            }
-          },
-          {
-            "label": "No",
-            "resolution": {
-              "correctProcess": "Ask the customer to check their spam or junk folder.",
-              "wrongProcess": "Skipping spam folder check and escalating prematurely.",
-              "resolutionScript": "Please check your spam or junk folder. Sometimes emails get filtered there.",
-              "additionalNotes": "Wait 5 minutes after resending before rechecking."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "label": "Wrong email entered",
-      "next": {
-        "question": "Can the customer access their account?",
-        "options": [
-          {
-            "label": "Yes",
-            "resolution": {
-              "correctProcess": "Guide them to update their email address in settings.",
-              "wrongProcess": "Telling them to register a new account instead.",
-              "resolutionScript": "Please go to Settings > Account > Edit Email to change your email.",
-              "additionalNotes": "Make sure they verify the new email after updating."
-            }
-          },
-          {
-            "label": "No",
-            "resolution": {
-              "correctProcess": "Escalate to Tier 2 to manually correct email from backend.",
-              "wrongProcess": "Instructing the user to create a new account.",
-              "resolutionScript": "I'll escalate this to our backend team to update your email securely.",
-              "additionalNotes": "Document the correct email and customer ID before escalation."
-            }
-          }
-        ]
-      }
-    }
-  ]
+  "title": "Owner Not Verified",
+  "instruction": "Make sure the owner has submitted valid verification documents via the official portal.",
+  "emailTemplate": "Dear Owner,\n\nYour listing is currently not verified. Please follow the steps on the knowledge base to complete verification.\n\nThank you,\nSupport Team",
+  "knowledgeBase": {
+    "title": "How to Verify Your Listing",
+    "url": "https://support.tripadvisor.com/articles/how-to-verify"
+  },
+  "relatedCases": ["case-1021", "case-1099", "case-1145"]
 }
